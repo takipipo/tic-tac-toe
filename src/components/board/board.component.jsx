@@ -36,7 +36,7 @@ class Board extends React.Component {
     const squares = this.state.squares.slice();
     if (
       this.calculateWinner(squares) ||
-      squares.every((square) => square != null)
+      squares.every((square) => square != null) || squares[i] != null
     ) {
       return;
     }
